@@ -12,11 +12,17 @@ export class PresentacionComponent implements OnInit {
    nombre: string = 'Anni';
    carrera: string = 'ISW';
    materias: Materia[] = MATERIAS;
+   materiaSeleccionada?: Materia; 
    CSSClass: boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  onSelect(materia: Materia): void {
+    this.materiaSeleccionada = materia;
   }
 
 }

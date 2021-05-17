@@ -1,1 +1,22 @@
-<h2></h2>
+<div>
+
+    <h3>Nombre: {{nombre}}</h3>
+    <h3>Carrera: {{carrera}}</h3>
+
+    <ul>
+        <li *ngFor="let materia of materias" (click)="onSelect(materia)">
+            Materia: {{materia.nombre}}
+        </li>
+    </ul>
+
+    <div *ngIf="materiaSeleccionada">
+        <div><span>Nombre: </span>{{materiaSeleccionada.nombre}}</div>
+        <div>
+            <div><span>Maestro: </span>{{materiaSeleccionada.maestro}}</div>
+            <label for="descripcion">Descripción: </label>
+            <div>{{materiaSeleccionada.descripcion}}</div>
+            <input id="descripcion" [(ngModel)]="materiaSeleccionada.descripcion" placeholder="descripcion">
+        </div>
+    </div>
+
+</div>

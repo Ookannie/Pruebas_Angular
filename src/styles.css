@@ -9,9 +9,7 @@
     color: #444;
     font-weight: lighter;
   }
-  h3 {
-    font-size: 1.3rem;
-  }
+ 
   body {
     padding: .5rem;
     max-width: 1000px;
@@ -22,6 +20,7 @@
       padding: 2rem;
     }
   }
+
   body, input[text] {
     color: #333;
     font-family: Cambria, Georgia, serif;
@@ -29,6 +28,7 @@
   a {
     cursor: pointer;
   }
+  
   button {
     background-color: #eee;
     border: none;

@@ -1,6 +1,6 @@
-import { Tarea } from './tarea'; 
+import { Materia } from './materia'; 
 
-export const TAREAS: Tarea[] = [
+export const MATERIAS: Materia[] = [
 
     {nombre: 'Calidad de Software', maestro: 'Elsa Padilla'},
     {nombre: 'Integrador', maestro: 'Iván Tapia'},

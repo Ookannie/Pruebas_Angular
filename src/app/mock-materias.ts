@@ -1,4 +1,4 @@
-import { Materia } from './materia'; 
+import { Materia } from './interfaces/materia'; 
 
 export const MATERIAS: Materia[] = [
 

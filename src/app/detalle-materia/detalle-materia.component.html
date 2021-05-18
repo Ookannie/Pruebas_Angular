@@ -1,0 +1,9 @@
+<div *ngIf="materia">
+    <div><span>Nombre: </span>{{materia.nombre}}</div>
+    <div>
+        <div><span>Maestro: </span>{{materia.maestro}}</div>
+        <label for="descripcion">Descripción: </label>
+        <p>{{materia.descripcion}}</p>
+        <input id="descripcion" [(ngModel)]="materia.descripcion" placeholder="descripcion">
+    </div>
+</div>

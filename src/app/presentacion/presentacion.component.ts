@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Materia } from '../materia';
+import { Materia } from '../interfaces/materia';
 import { MATERIAS } from '../mock-materias';
 
 @Component({

@@ -13,7 +13,7 @@ export class PresentacionComponent implements OnInit {
    carrera: string = 'ISW';
    materias: Materia[] = MATERIAS;
    materiaSeleccionada?: Materia; 
-   CSSClass: boolean = true;
+   isSelected: boolean = false;
 
   constructor() { }
 
@@ -23,6 +23,7 @@ export class PresentacionComponent implements OnInit {
 
   onSelect(materia: Materia): void {
     this.materiaSeleccionada = materia;
+    this.isSelected = true;
   }
 
 }

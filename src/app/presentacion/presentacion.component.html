@@ -4,7 +4,8 @@
     <h3>Carrera: {{carrera}}</h3>
 
     <ul>
-        <li *ngFor="let materia of materias" (click)="onSelect(materia)">
+        <li *ngFor="let materia of materias" (click)="onSelect(materia)" 
+        [ngClass]="materia === materiaSeleccionada? (isSelected ? 'selected' : ' ') : ' ' ">
             Materia: {{materia.nombre}}
         </li>
     </ul>
